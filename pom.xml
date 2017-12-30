@@ -17,10 +17,16 @@
   </properties>
 	
   <distributionManagement>
-   <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
-   </snapshotRepository>
+    <repository>
+         <id>internal.repo</id>
+         <name>MyCo Internal Repository</name>
+         <url>http://localhost:8082/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+         <id>Snapshot.repo</id>
+         <name>Your Snapshot Repository</name>
+         <url>http://localhost:8082/repository/maven-snapshots/</url>
+    </snapshotRepository>
 </distributionManagement>
 		
   <dependencies>
